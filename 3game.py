@@ -12,7 +12,7 @@ def juego(numero, minimo, maximo):
     maximo = intento - 1
     victoria = False
   else:
-    print("Enhorabuena, el numero era {numero}")
+    print("Congratulations, you win")
     intento = minimo = maximo
     victoria = True
     return minimo, maximo, victoria
