@@ -17,8 +17,8 @@ def juego(numero, minimo, maximo):
     victoria = True
     return minimo, maximo, victoria
     
-def elirNivel(minimo,maximo):
-  return Nivel("Elige un nivel", minimo,maximo)
+def eligirNivel(minimo,maximo):
+  return decidirNivel("Elige un nivel", minimo,maximo)
   
 def jugarPartida(numero, minimo, maximo):
   minimo,maximo,victoria = juego(numero, minimo, maximo)
@@ -28,7 +28,7 @@ def jugarPartida(numero, minimo, maximo):
 def jugar():
   minimo, maximo = deicirNivel(level)
   while True:
-    numero = decirNivel(level)
+    numero = eligirNivel(minimo, maximo)
     jugarPartida(numero, minimo, maximo)
     if not respuestaStartSiONo("Nueva Partida: "):
       print("Adios")
