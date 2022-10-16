@@ -1,7 +1,6 @@
-from start import(
-  respuestaStartSiONo,
-  decidirNivel 
-)
+from 1start import respuestaSiONo
+from 2number import decidirNivel
+
 def juego(numero, minimo, maximo):
   intento = decidirNivel("Adivine el numero", minimo, maximo)
   if intento < numero:
