@@ -1,7 +1,7 @@
-#Para elegir el nivel de partida creo la funcion 
+
 import random
 
-def elegirNivel(level):
+def decidirNivel(level):
   while True:
     level = ("Elige un nivel: ")
     if level:
@@ -14,7 +14,5 @@ def elegirNivel(level):
       Experto = ramdom.randint(0, 1000000000000)
     return elegirNivel(level)
    
-def pedirNumero ():
-  while True:
-    print(invitacion, end = ": ")
+
     
