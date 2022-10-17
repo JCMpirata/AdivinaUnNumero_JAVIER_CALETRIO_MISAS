@@ -1,3 +1,7 @@
+#Carpeta 4play
+
+#Lanzador del juego
+
 from 3game import jugar
-if_name_=="_main_":
+if__name__=="__main__":
   jugar()
