@@ -3,12 +3,14 @@
 from 2start import(
 2start.respuestaStartSiONo, 
 2start.decidirNivel, 
-2start.oportunidades
+2start.oportunidades,
+2start.oportunidades,
+2start.puntuaciones
 )
 
 #Creo el codigo del juego
 def juego(numero, minimo, maximo):
-  intento = decidirNivel("Adivine el numero", minimo, maximo)
+  intento = decidirNivel()
   
   if intento < numero:
     print("El numero que buscas es mas grande")
@@ -18,7 +20,7 @@ def juego(numero, minimo, maximo):
     print("El numero que buscas es mas pequeño")
     maximo = intento - 1
     victoria = False
-  elif intento == oportunidades:
+  elif intento == oportunidades():
     victoria = False
     break
   else:
@@ -29,7 +31,7 @@ def juego(numero, minimo, maximo):
     
 #Funcion para elegir nivel 
 def eligirNivel(minimo,maximo):
-  return decidirNivel("Elige un nivel", minimo,maximo)
+  return decidirNivel()
   
 #Funcion para jugar una partida  
 def jugarPartida(numero, minimo, maximo):
