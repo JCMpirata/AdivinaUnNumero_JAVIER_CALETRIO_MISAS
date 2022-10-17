@@ -1,3 +1,4 @@
+
 def respuestaStartSiONo():
   respuestaStart = ("Si", "si", "Yes", "yes")
   try:
@@ -5,7 +6,7 @@ def respuestaStartSiONo():
   except:
     return False
     
-def elegirNivel():
+def decidirNivel():
   print("1 - Nivel Simple(de 0 a 100)" )
   print("2 - Nivel intermedio(de 0 a 1000")
   print("3 - Nivel Avanzado(de 0 al 1000000")
@@ -22,5 +23,5 @@ def elegirNivel():
       import nivel_experto
     else:
       print("Error")
-      return elegirNivel()
+      return decidirNivel()
       

@@ -1,5 +1,7 @@
-from 1start import respuestaSiONo
-from 2number import decidirNivel
+from 1start import(
+respuestaSiONo,
+decidirNivel
+) 
 
 def juego(numero, minimo, maximo):
   intento = decidirNivel("Adivine el numero", minimo, maximo)
@@ -12,7 +14,7 @@ def juego(numero, minimo, maximo):
     maximo = intento - 1
     victoria = False
   else:
-    print("Congratulations, you win")
+    print("Congratulations, you won")
     intento = minimo = maximo
     victoria = True
     return minimo, maximo, victoria
