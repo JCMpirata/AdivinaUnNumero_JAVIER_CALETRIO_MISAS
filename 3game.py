@@ -1,8 +1,5 @@
-from 1start import(
-respuestaSiONo,
-decidirNivel
-) 
-
+from 1start import respuestaStartSiONo, decidirNivel
+#Creo el codigo del juego
 def juego(numero, minimo, maximo):
   intento = decidirNivel("Adivine el numero", minimo, maximo)
   if intento < numero:
@@ -28,7 +25,7 @@ def jugarPartida(numero, minimo, maximo):
   return
   
 def jugar():
-  minimo, maximo = deicirNivel(level)
+  minimo, maximo = decidirNivel()
   while True:
     numero = eligirNivel(minimo, maximo)
     jugarPartida(numero, minimo, maximo)

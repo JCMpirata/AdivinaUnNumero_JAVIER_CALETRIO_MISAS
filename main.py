@@ -1,5 +1,9 @@
 import ramdom
 
+from 3game import jugar
+if_name_=="_main_":
+  jugar()
+
 def elegirNivel():
   nivel = "Elige el nivel de partida: "
   if nivel:
