@@ -1,13 +1,13 @@
-#Carpeta 2sart
+#Carpeta b_start
 
-from 1niveles import(
-1niveles.nivel_simple,
-1niveles.nivel_intermedio,
-1niveles.nivel_avanzado,
-1niveles.nivel_experto
-)
+import a_niveles
+a_niveles.nivel_simple(),
+a_niveles.nivel_intermedio(),
+a_niveles.nivel_avanzado(),
+a_niveles.nivel_experto()
 
-"Creo la funcion respuestaStartSiONo para crear las diferentes respuestas validas para (Nueva partida: )"
+
+#Creo la funcion respuestaStartSiONo para crear las diferentes respuestas validas para (Nueva partida: )
 
 #Funcion para obtener una respuesta a "Nueva partida: " la cual utilizare esta funcion en la carpeta 3game
 def respuestaStartSiONo():
@@ -67,8 +67,7 @@ def puntuaciones():
     puntuacion = puntos + 5
   else:
     puntuacion = 0
-
-  print tabla["nombreJugador", "puntos"]
-  return tabla
+    print(tabla["nombreJugador", "puntos"])
+    return tabla
 
   

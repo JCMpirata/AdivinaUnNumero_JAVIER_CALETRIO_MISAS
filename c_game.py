@@ -1,12 +1,12 @@
 #Carpeta 3game
 
-from 2start import(
-2start.respuestaStartSiONo, 
-2start.decidirNivel, 
-2start.oportunidades,
-2start.oportunidades,
-2start.puntuaciones
-)
+import b_start
+b_start.respuestaStartSiONo(), 
+b_start.decidirNivel(), 
+b_start.oportunidades(),
+b_start.oportunidades(),
+b_start.puntuaciones()
+
 
 #Creo el codigo del juego
 def juego(numero, minimo, maximo):
